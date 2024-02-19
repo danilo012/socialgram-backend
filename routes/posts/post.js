@@ -6,7 +6,7 @@ const User = require("../../models/User");
 
 router.get("/", async (req, res) => {
   try {
-    const posts = await Post.find().sort({ date: 1 });
+    const posts = await Post.find().sort({ date: -1 });
 
     let reqRes = [];
 
